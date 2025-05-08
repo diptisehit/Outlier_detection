@@ -14,7 +14,8 @@ Below are some of the techniques of detecting outliers
    
    plt.boxplot(sample, vert=False)
    
-   ![image.png](attachment:de5cc1f8-d847-4581-83cf-498eb829c0fb.png)
+   ![image](https://github.com/user-attachments/assets/0d404254-913d-468d-b211-046c05cac83c)
+
 
    IQR = Q3-Q1
    
@@ -22,14 +23,16 @@ Below are some of the techniques of detecting outliers
 
    Any data point whose Z-score falls out of 3rd standard deviation is an outlier treatment.
 
-   ![image.png](attachment:9bbcea18-4462-470a-8946-aa1ebe41d6f6.png)
+   ![image](https://github.com/user-attachments/assets/34851566-9cbf-4315-bda7-f664c27f6847)
+
 
    - loop through all the data points and compute the Z-score using the formula (Xi-mean)/std.
    - define a threshold value of 3 and mark the datapoints whose absolute value of Z-score is greater than the threshold as outliers.
      
 3. Inter Quantile Range(IQR) : Data points that lie 1.5 times of IQR above Q3 and below Q1 are outliers.
 
-   ![image.png](attachment:b9d6550d-8728-4a2e-a54a-577e2e1d2500.png)
+  ![image](https://github.com/user-attachments/assets/8a48d9a4-286b-48f7-a591-143e41e97354)
+
 
    positive outliers : Q3 + (1.5*IQR)
 
